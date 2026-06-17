@@ -1,0 +1,35 @@
+
+=== 智能记忆检索报告 ===
+时间: 2026-06-14 22:11:35
+
+知识图谱:
+- 实体数: 11
+- 关系数: 11
+
+记忆库:
+- 记忆数: 5
+
+智能搜索示例:
+
+查询: "我想做一个高端网站"
+结果: 2个记忆
+  - VIBE_CODING_WORKFLOW
+  - Luxury vs Tech Design Patterns
+
+查询: "设计参考什么品牌"
+结果: 2个记忆
+  - VIBE_CODING_WORKFLOW
+  - Luxury vs Tech Design Patterns
+
+查询: "用户偏好是什么"
+实体: 用户
+相关实体: 8个
+  - 浅色主题 (深度: 1)
+  - 拒绝AI味 (深度: 1)
+  - Hermes (深度: 1)
+  - Vibe Coding (深度: 1)
+  - engram (深度: 2)
+  - Obsidian (深度: 2)
+  - 奢侈品极简设计 (深度: 2)
+  - 暖灰企业沉浸式 (深度: 2)
+相关记忆: 0个

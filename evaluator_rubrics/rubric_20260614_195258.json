@@ -1,0 +1,118 @@
+{
+  "rubric_id": "rubric_20260614_195258",
+  "title": "测试评分表",
+  "dimensions": {
+    "code_correctness": {
+      "name": "代码正确性",
+      "description": "代码是否正确实现了功能",
+      "levels": {
+        "A": {
+          "score": 4,
+          "description": "所有测试通过"
+        },
+        "B": {
+          "score": 3,
+          "description": "主流程通过"
+        },
+        "C": {
+          "score": 2,
+          "description": "部分通过"
+        },
+        "D": {
+          "score": 1,
+          "description": "构建失败"
+        }
+      }
+    },
+    "architecture_compliance": {
+      "name": "架构合规性",
+      "description": "代码是否符合架构规范",
+      "levels": {
+        "A": {
+          "score": 4,
+          "description": "完全合规"
+        },
+        "B": {
+          "score": 3,
+          "description": "轻微偏差"
+        },
+        "C": {
+          "score": 2,
+          "description": "明显偏差"
+        },
+        "D": {
+          "score": 1,
+          "description": "严重违规"
+        }
+      }
+    },
+    "test_coverage": {
+      "name": "测试覆盖",
+      "description": "测试是否充分",
+      "levels": {
+        "A": {
+          "score": 4,
+          "description": "主流程+边界"
+        },
+        "B": {
+          "score": 3,
+          "description": "仅主流程"
+        },
+        "C": {
+          "score": 2,
+          "description": "仅骨架"
+        },
+        "D": {
+          "score": 1,
+          "description": "无测试"
+        }
+      }
+    },
+    "performance": {
+      "name": "性能",
+      "description": "代码性能是否达标",
+      "levels": {
+        "A": {
+          "score": 4,
+          "description": "超出预期"
+        },
+        "B": {
+          "score": 3,
+          "description": "符合预期"
+        },
+        "C": {
+          "score": 2,
+          "description": "略低于预期"
+        },
+        "D": {
+          "score": 1,
+          "description": "严重不足"
+        }
+      }
+    },
+    "security": {
+      "name": "安全性",
+      "description": "代码是否安全",
+      "levels": {
+        "A": {
+          "score": 4,
+          "description": "无安全漏洞"
+        },
+        "B": {
+          "score": 3,
+          "description": "低风险漏洞"
+        },
+        "C": {
+          "score": 2,
+          "description": "中等风险漏洞"
+        },
+        "D": {
+          "score": 1,
+          "description": "高风险漏洞"
+        }
+      }
+    }
+  },
+  "created_at": "2026-06-14T19:52:58.404361",
+  "evaluations": []
+}

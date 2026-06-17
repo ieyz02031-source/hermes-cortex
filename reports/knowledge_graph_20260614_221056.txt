@@ -1,0 +1,40 @@
+
+=== 知识图谱报告 ===
+时间: 2026-06-14 22:10:56
+
+实体统计:
+- 总数: 11
+- 类型分布:
+  - brand: 2
+  - concept: 2
+  - person: 1
+  - preference: 2
+  - system: 1
+  - tool: 2
+  - workflow: 1
+
+关系统计:
+- 总数: 11
+- 类型分布:
+  - 使用: 2
+  - 偏好: 2
+  - 包含: 2
+  - 参考: 3
+  - 集成: 2
+
+示例查询:
+
+1. 用户偏好:
+   - 浅色主题 (深度: 1)
+   - 拒绝AI味 (深度: 1)
+
+2. 奢侈品设计参考:
+   - Cartier (深度: 1)
+   - Aesop (深度: 1)
+
+3. 用户到Cartier的路径:
+   - user → vibe_coding → luxury_design → cartier
+
+4. 预测需求（上下文：我想做一个高端网站）:
+   - 奢侈品设计 (置信度: 0.9)
+     相关实体: luxury_design, cartier, aesop

@@ -1,0 +1,149 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-06-15",
+  "features": [
+    {
+      "id": "F001",
+      "name": "热缓存系统",
+      "description": "自动扫描最近修改的笔记，更新 index.md 顶部的热缓存区域",
+      "status": "done",
+      "script": "scripts/hot_cache.py",
+      "verification": "python scripts/hot_cache.py 无报错"
+    },
+    {
+      "id": "F002",
+      "name": "语义索引",
+      "description": "用 all-MiniLM-L6-v2 模型生成笔记的向量嵌入，支持语义相似度搜索",
+      "status": "done",
+      "script": "scripts/semantic_index.py",
+      "verification": "python scripts/semantic_index.py stats 显示索引统计"
+    },
+    {
+      "id": "F003",
+      "name": "自动研究",
+      "description": "分析现有知识，发现空白和薄弱点，生成研究建议",
+      "status": "done",
+      "script": "scripts/auto_research.py",
+      "verification": "python scripts/auto_research.py report 生成报告"
+    },
+    {
+      "id": "F004",
+      "name": "知识图谱",
+      "description": "从 Obsidian Vault 中抽取实体和关系，构建知识图谱",
+      "status": "done",
+      "script": "scripts/build_graph.py",
+      "verification": "python scripts/build_graph.py 构建图谱"
+    },
+    {
+      "id": "F005",
+      "name": "知识检索",
+      "description": "三层检索（热缓存、索引、图谱），返回相关笔记",
+      "status": "done",
+      "script": "scripts/retrieve.py",
+      "verification": "python scripts/retrieve.py '查询' 返回结果"
+    },
+    {
+      "id": "F006",
+      "name": "知识维护",
+      "description": "孤立检测、关联推荐、过期清理、统计报告、引用验证",
+      "status": "done",
+      "script": "scripts/maintain.py",
+      "verification": "python scripts/maintain.py stats 生成统计"
+    },
+    {
+      "id": "F007",
+      "name": "自进化引擎",
+      "description": "完整的自进化循环：发现空白 → 搜索补充 → 创建笔记 → 更新索引 → 更新热缓存",
+      "status": "done",
+      "script": "scripts/evolve.py",
+      "verification": "python scripts/evolve.py dry-run 干运行成功"
+    },
+    {
+      "id": "F008",
+      "name": "Cron 任务",
+      "description": "每天自动运行自进化循环",
+      "status": "done",
+      "script": "scripts/cron.py",
+      "verification": "python scripts/cron.py status 显示任务状态"
+    },
+    {
+      "id": "F009",
+      "name": "自动化 Hook",
+      "description": "在每次对话结束时自动运行，更新热缓存和索引",
+      "status": "done",
+      "script": "scripts/brain_hook.py",
+      "verification": "hermes hooks list 显示 ✓ allowed"
+    },
+    {
+      "id": "F010",
+      "name": "自动优化",
+      "description": "当知识库接近性能瓶颈时自动触发优化",
+      "status": "done",
+      "script": "scripts/auto_optimize.py",
+      "verification": "python scripts/auto_optimize.py 无报错"
+    },
+    {
+      "id": "F011",
+      "name": "Shell Hooks 集成",
+      "description": "通过 Shell Hooks 融入 Hermes 生命周期",
+      "status": "done",
+      "script": "scripts/hook_session_start.py, scripts/hook_session_end.py",
+      "verification": "hermes hooks doctor 显示 All healthy"
+    },
+    {
+      "id": "F012",
+      "name": "Harness Engineering 集成",
+      "description": "整合 Harness Engineering 的 5 个子系统模式",
+      "status": "done",
+      "script": "progress.md, feature_list.json, init.sh",
+      "verification": "verify_harness.py 11/11 通过"
+    },
+    {
+      "id": "F013",
+      "name": "progress.md 进度日志",
+      "description": "记录每次会话的进度，Harness Engineering State 子系统",
+      "status": "done",
+      "script": "progress.md",
+      "verification": "progress.md 存在且格式正确"
+    },
+    {
+      "id": "F014",
+      "name": "feature_list.json 功能列表",
+      "description": "机器可读的功能列表，跟踪每个功能的状态",
+      "status": "done",
+      "script": "feature_list.json",
+      "verification": "feature_list.json 存在且格式正确"
+    },
+    {
+      "id": "F015",
+      "name": "init.sh 初始化脚本",
+      "description": "会话初始化脚本，检查环境健康",
+      "status": "done",
+      "script": "init.sh",
+      "verification": "init.sh 存在且可执行"
+    },
+    {
+      "id": "F016",
+      "name": "verify_harness.py 验证脚本",
+      "description": "Harness 完整性验证，检查 5 个子系统",
+      "status": "done",
+      "script": "scripts/verify_harness.py",
+      "verification": "verify_harness.py 11/11 通过"
+    },
+    {
+      "id": "F017",
+      "name": "Harness Engineering 综合研究",
+      "description": "20+ 项目统计、AutoHarness、AHE、《御舆》、Harness Books",
+      "status": "done",
+      "script": "references/harness-engineering-comprehensive.md",
+      "verification": "综合研究报告 12.8KB 已保存"
+    }
+  ],
+  "harness": {
+    "instructions": "SKILL.md",
+    "state": "progress.md, feature_list.json",
+    "verification": "auto_optimize.py, maintain.py, verify_harness.py",
+    "scope": "feature_list.json 中的 status 字段",
+    "lifecycle": "init.sh, hook_session_start.py, hook_session_end.py"
+  }
+}

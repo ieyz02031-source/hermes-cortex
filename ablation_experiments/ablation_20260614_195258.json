@@ -1,0 +1,43 @@
+{
+  "experiment_id": "ablation_20260614_195258",
+  "title": "测试实验",
+  "baseline_components": [
+    "instructions",
+    "state",
+    "verification",
+    "scope",
+    "lifecycle",
+    "sprint_contract",
+    "evaluator_rubric",
+    "observability"
+  ],
+  "ablation_sequence": [
+    [
+      "instructions"
+    ],
+    [
+      "state"
+    ],
+    [
+      "verification"
+    ],
+    [
+      "scope"
+    ],
+    [
+      "lifecycle"
+    ],
+    [
+      "sprint_contract"
+    ],
+    [
+      "evaluator_rubric"
+    ],
+    [
+      "observability"
+    ]
+  ],
+  "created_at": "2026-06-14T19:52:58.571000",
+  "results": [],
+  "status": "created"
+}

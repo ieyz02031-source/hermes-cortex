@@ -1,0 +1,29 @@
+
+=== 记忆优先级报告 ===
+时间: 2026-06-14 21:59:35
+
+优先级定义:
+  - high: 高 (核心规则、用户偏好)
+    权重: 1.0, 自动注入: True
+  - medium: 中 (项目详情、技术文档)
+    权重: 0.7, 自动注入: False
+  - low: 低 (历史记录、临时信息)
+    权重: 0.3, 自动注入: False
+
+记忆优先级:
+  - WORKFLOW_NO_BLIND_ACTION: 高 (权重: 1.0)
+  - VIBE_CODING_WORKFLOW: 高 (权重: 1.0)
+  - Taste Critic Rules: 高 (权重: 1.0)
+  - WeChat Integration: 中 (权重: 0.7)
+  - Skill Cleanup Completed: 中 (权重: 0.7)
+  - Test Save: 低 (权重: 0.3)
+
+按优先级统计:
+  - 高: 3个记忆
+  - 低: 1个记忆
+  - 中: 2个记忆
+
+自动注入的记忆（高优先级）:
+  - WORKFLOW_NO_BLIND_ACTION
+  - VIBE_CODING_WORKFLOW
+  - Taste Critic Rules

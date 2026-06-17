@@ -1,0 +1,25 @@
+
+=== 记忆衰减报告 ===
+时间: 2026-06-14 21:44:09
+
+衰减配置:
+- 高频 (7天内): 权重 100%
+- 中频 (30天内): 权重 70%
+- 低频 (90天内): 权重 30%
+- 过时 (90天+): 权重 10%
+
+记忆状态:
+  ✓ VIBE_CODING_WORKFLOW: 权重 100.0% (active)
+  ✓ Taste Critic Rules: 权重 100.0% (active)
+  ✓ Skill Cleanup Completed: 权重 100.0% (active)
+  ✓ SOUL.md Compression: 权重 100.0% (active)
+  ✓ NVIDIA NIM API: 权重 70.0% (active)
+
+统计:
+- 活跃记忆: 5
+- 过时记忆: 0
+- 总计: 5
+
+建议:
+- 活跃记忆: 保持在memory中
+- 过时记忆: 考虑迁移到engram或Obsidian

@@ -1,0 +1,277 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-06-14",
+  "features": [
+    {
+      "id": "F001",
+      "name": "热缓存系统",
+      "description": "自动扫描最近修改的笔记，更新 index.md 顶部的热缓存区域",
+      "status": "done",
+      "script": "scripts/hot_cache.py",
+      "verification": "python scripts/hot_cache.py 无报错"
+    },
+    {
+      "id": "F002",
+      "name": "语义索引",
+      "description": "用 all-MiniLM-L6-v2 模型生成笔记的向量嵌入，支持语义相似度搜索",
+      "status": "done",
+      "script": "scripts/semantic_index.py",
+      "verification": "python scripts/semantic_index.py stats 显示索引统计"
+    },
+    {
+      "id": "F003",
+      "name": "自动研究",
+      "description": "分析现有知识，发现空白和薄弱点，生成研究建议",
+      "status": "done",
+      "script": "scripts/auto_research.py",
+      "verification": "python scripts/auto_research.py report 生成报告"
+    },
+    {
+      "id": "F004",
+      "name": "知识图谱",
+      "description": "从 Obsidian Vault 中抽取实体和关系，构建知识图谱",
+      "status": "done",
+      "script": "scripts/build_graph.py",
+      "verification": "python scripts/build_graph.py 构建图谱"
+    },
+    {
+      "id": "F005",
+      "name": "知识检索",
+      "description": "三层检索（热缓存、索引、图谱），返回相关笔记",
+      "status": "done",
+      "script": "scripts/retrieve.py",
+      "verification": "python scripts/retrieve.py '查询' 返回结果"
+    },
+    {
+      "id": "F006",
+      "name": "知识维护",
+      "description": "孤立检测、关联推荐、过期清理、统计报告、引用验证",
+      "status": "done",
+      "script": "scripts/maintain.py",
+      "verification": "python scripts/maintain.py stats 生成统计"
+    },
+    {
+      "id": "F007",
+      "name": "自进化引擎",
+      "description": "完整的自进化循环：发现空白 → 搜索补充 → 创建笔记 → 更新索引 → 更新热缓存",
+      "status": "done",
+      "script": "scripts/evolve.py",
+      "verification": "python scripts/evolve.py dry-run 干运行成功"
+    },
+    {
+      "id": "F008",
+      "name": "Cron 任务",
+      "description": "每天自动运行自进化循环",
+      "status": "done",
+      "script": "scripts/cron.py",
+      "verification": "python scripts/cron.py status 显示任务状态"
+    },
+    {
+      "id": "F009",
+      "name": "自动化 Hook",
+      "description": "在每次对话结束时自动运行，更新热缓存和索引",
+      "status": "done",
+      "script": "scripts/brain_hook.py",
+      "verification": "hermes hooks list 显示 ✓ allowed"
+    },
+    {
+      "id": "F010",
+      "name": "自动优化",
+      "description": "当知识库接近性能瓶颈时自动触发优化",
+      "status": "done",
+      "script": "scripts/auto_optimize.py",
+      "verification": "python scripts/auto_optimize.py 无报错"
+    },
+    {
+      "id": "F011",
+      "name": "Shell Hooks 集成",
+      "description": "通过 Shell Hooks 融入 Hermes 生命周期",
+      "status": "done",
+      "script": "scripts/hook_session_start.py, scripts/hook_session_end.py",
+      "verification": "hermes hooks doctor 显示 All healthy"
+    },
+    {
+      "id": "F012",
+      "name": "Harness Engineering 集成",
+      "description": "整合 Harness Engineering 的 5 个子系统模式",
+      "status": "done",
+      "script": "progress.md, feature_list.json, init.sh",
+      "verification": "verify_harness.py 11/11 通过"
+    },
+    {
+      "id": "F013",
+      "name": "Sprint 合同机制",
+      "description": "任务前协商完成的定义，避免感觉完成了但实际没完成的情况",
+      "status": "done",
+      "script": "scripts/sprint_contract.py",
+      "verification": "python scripts/sprint_contract.py list 显示合同列表"
+    },
+    {
+      "id": "F014",
+      "name": "评估者评分表机制",
+      "description": "将好不好转化为可量化评分，避免主观判断",
+      "status": "done",
+      "script": "scripts/evaluator_rubric.py",
+      "verification": "python scripts/evaluator_rubric.py list 显示评分表列表"
+    },
+    {
+      "id": "F015",
+      "name": "消融实验机制",
+      "description": "逐个移除组件，识别哪个组件真正重要",
+      "status": "done",
+      "script": "scripts/ablation_experiment.py",
+      "verification": "python scripts/ablation_experiment.py list 显示实验列表"
+    },
+    {
+      "id": "F016",
+      "name": "engram 持久化记忆集成",
+      "description": "集成 engram 持久化记忆系统，提供跨会话记忆、FTS5 全文搜索、MCP 服务器支持",
+      "status": "done",
+      "script": "D:/Hermes/tools/engram/engram.exe",
+      "verification": "engram mcp --tools=agent 正常启动"
+    },
+    {
+      "id": "F017",
+      "name": "open-websearch 全网搜索集成",
+      "description": "集成 open-websearch 全网搜索系统，支持多引擎搜索（bing, baidu, duckduckgo, exa, brave 等），无需 API 密钥",
+      "status": "done",
+      "command": "open-websearch",
+      "verification": "MODE=stdio open-websearch 正常启动"
+    },
+    {
+      "id": "F018",
+      "name": "记忆系统优化",
+      "description": "三层记忆架构：Hot(memory, 38%使用率) + Warm(engram, 16个记忆) + Cold(Obsidian)",
+      "status": "done",
+      "verification": "memory使用率从68%优化到38%，engram从2个记忆增加到16个"
+    },
+    {
+      "id": "F019",
+      "name": "记忆自动整理",
+      "description": "自动清理过时记忆、跨层同步、记忆衰减",
+      "status": "done",
+      "script": "scripts/memory_auto_cleanup.py",
+      "verification": "python scripts/memory_auto_cleanup.py 运行正常"
+    },
+    {
+      "id": "F020",
+      "name": "记忆衰减系统",
+      "description": "基于访问频率和时间衰减记忆权重",
+      "status": "done",
+      "script": "scripts/memory_decay.py",
+      "verification": "python scripts/memory_decay.py 运行正常"
+    },
+    {
+      "id": "F021",
+      "name": "跨层同步系统",
+      "description": "同步memory索引和engram内容",
+      "status": "done",
+      "script": "scripts/memory_sync.py",
+      "verification": "python scripts/memory_sync.py 运行正常"
+    },
+    {
+      "id": "F022",
+      "name": "语义搜索系统",
+      "description": "用embedding模型理解语义，找到相似内容",
+      "status": "done",
+      "script": "scripts/semantic_search.py",
+      "verification": "python scripts/semantic_search.py 运行正常"
+    },
+    {
+      "id": "F023",
+      "name": "记忆分类标签系统",
+      "description": "给记忆打标签，按主题分类",
+      "status": "done",
+      "script": "scripts/memory_tags.py",
+      "verification": "python scripts/memory_tags.py 运行正常"
+    },
+    {
+      "id": "F024",
+      "name": "自动学习系统",
+      "description": "从对话中自动提取记忆",
+      "status": "done",
+      "script": "scripts/auto_learning.py",
+      "verification": "python scripts/auto_learning.py 运行正常"
+    },
+    {
+      "id": "F025",
+      "name": "记忆优先级系统",
+      "description": "给记忆设置优先级，重要记忆优先显示",
+      "status": "done",
+      "script": "scripts/memory_priority.py",
+      "verification": "python scripts/memory_priority.py 运行正常"
+    },
+    {
+      "id": "F026",
+      "name": "知识图谱系统",
+      "description": "构建实体和关系的网络，支持推理和预知",
+      "status": "done",
+      "script": "scripts/knowledge_graph.py",
+      "verification": "python scripts/knowledge_graph.py 运行正常"
+    },
+    {
+      "id": "F027",
+      "name": "智能记忆检索系统",
+      "description": "结合知识图谱和记忆系统，支持推理和预知",
+      "status": "done",
+      "script": "scripts/smart_retrieval.py",
+      "verification": "python scripts/smart_retrieval.py 运行正常"
+    },
+    {
+      "id": "F028",
+      "name": "记忆自管理系统",
+      "description": "自动健康检查、清理、同步、衰减",
+      "status": "done",
+      "script": "scripts/memory_self_manager.py",
+      "verification": "python scripts/memory_self_manager.py 运行正常"
+    }
+  ],
+  "harness": {
+    "instructions": "SKILL.md",
+    "state": "progress.md, feature_list.json",
+    "verification": "auto_optimize.py, maintain.py, verify_harness.py",
+    "scope": "feature_list.json 中的 status 字段",
+    "lifecycle": "init.sh, hook_session_start.py, hook_session_end.py",
+    "ahe": {
+      "sprint_contract": "sprint_contract.py",
+      "evaluator_rubric": "evaluator_rubric.py",
+      "ablation_experiment": "ablation_experiment.py",
+      "observability": "observability.py"
+    },
+    "engram": {
+      "command": "D:/Hermes/tools/engram/engram.exe",
+      "args": [
+        "mcp",
+        "--tools=agent"
+      ],
+      "tools": 18,
+      "features": [
+        "persistent_memory",
+        "fts5_search",
+        "session_lifecycle",
+        "conflict_resolution"
+      ]
+    },
+    "open-websearch": {
+      "command": "open-websearch",
+      "args": [],
+      "env": {
+        "MODE": "stdio"
+      },
+      "engines": [
+        "bing",
+        "baidu",
+        "duckduckgo",
+        "exa",
+        "brave",
+        "startpage",
+        "sogou"
+      ],
+      "features": [
+        "multi_engine_search",
+        "no_api_key",
+        "mcp_support"
+      ]
+    }
+  }
+}

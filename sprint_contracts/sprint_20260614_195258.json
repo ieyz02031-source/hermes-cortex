@@ -1,0 +1,18 @@
+{
+  "contract_id": "sprint_20260614_195258",
+  "title": "测试合同",
+  "scope": [
+    "功能A",
+    "功能B"
+  ],
+  "verification_standards": [
+    "测试通过",
+    "代码审查"
+  ],
+  "exclusions": [
+    "不处理边界情况"
+  ],
+  "created_at": "2026-06-14T19:52:58.255781",
+  "status": "draft",
+  "evaluation_results": []
+}
